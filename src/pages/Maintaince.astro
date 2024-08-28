@@ -1,0 +1,90 @@
+---
+
+---
+
+<div class="container">
+	<h1>Site Under Maintenance 🚧</h1>
+	<p>I'm currently making improvements. Please check back shortly!</p>
+	<div class="clock">
+		<div class="hour-hand"></div>
+		<div class="minute-hand"></div>
+		<div class="second-hand"></div>
+	</div>
+</div>
+
+<style>
+	.container {
+		max-width: 400px;
+		margin: 40px auto;
+		background-color: #fff;
+		padding: 20px;
+		border: 1px solid #ddd;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	}
+
+	h1 {
+		font-size: 24px;
+		margin-bottom: 25px;
+	}
+
+	p {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+
+	.clock {
+		width: 100px;
+		height: 100px;
+		border: 1px solid #ddd;
+		border-radius: 50%;
+		position: relative;
+		margin: 20px auto;
+	}
+
+	.hour-hand,
+	.minute-hand,
+	.second-hand {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #333;
+		border-radius: 10px;
+	}
+
+	.hour-hand {
+		width: 20px;
+		height: 40px;
+		transform: translate(-50%, -50%) rotate(30deg);
+	}
+
+	.minute-hand {
+		width: 15px;
+		height: 60px;
+		transform: translate(-50%, -50%) rotate(60deg);
+	}
+
+	.second-hand {
+		width: 10px;
+		height: 80px;
+		transform: translate(-50%, -50%) rotate(90deg);
+	}
+
+	@media (max-width: 600px) {
+		.container {
+			margin: 20px auto;
+			padding: 15px;
+		}
+		.clock {
+			width: 80px;
+			height: 80px;
+		}
+		.hour-hand,
+		.minute-hand,
+		.second-hand {
+			width: 10px;
+			height: 30px;
+		}
+	}
+</style>
